@@ -1,5 +1,8 @@
-cort = ("шалаш","дом","мама","ротор")
+from pickle import TRUE
+
+
+cort =("шалаш","дом","мама","ротор")
+
 for key in cort:
-    print(key)
-    pol = list(filter(lambda x: str(key) == "".join(reversed(key)),cort))
+    pol = list(filter(lambda key: key == "".join(reversed(key)),cort))
 print("Полиморфы:",pol)
